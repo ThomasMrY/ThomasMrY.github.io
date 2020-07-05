@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="css/mobileselect.css"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/rem.js"></script>
+	</head>
+
+	<body>
+		<div class="contents">
+			<ul>
+				<li>
+					<p>请假人:</p>
+					<input type="text" placeholder="请输入姓名" name="" id="" value="" />
+				</li>
+				<li>
+					<p>所属班级:</p>
+					<span>民商研18级1班</span>
+				</li>
+				<li>
+					<p>所属院系:</p>
+					<span>民商法学院</span>
+				</li>
+				<li>
+					<p>所属专业:</p>
+					<span>研究生2018级</span>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<p>出校时间:</p>
+					<input type="text" placeholder="请输入时间" name="" id="" value="" />
+				</li>
+				<li>
+					<p>返校时间:</p>
+					<input type="text" placeholder="请输入时间" name="" id="" value="" />
+				</li>
+			</ul>
+			<div class="btn on">
+				<p>可出校</p>
+				<div>
+					<input type="text" id="select_0" placeholder="2020-06-11" name="" id="" value="" />
+					<span id="time">20:55:45</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/mobileselect.js" ></script>
+	<script type="text/javascript" src="js/selectdate.js" ></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script>
+		$.selectYY_MM_DD("#select_0");
+		
+		
+		function getNow(s) {
+			return s < 10 ? '0' + s : s;
+		}
+
+		var times = setInterval(function() {
+			var myDate = new Date();
+			var year = myDate.getFullYear(); //获取当前年
+			var month = myDate.getMonth() + 1; //获取当前月
+			var date = myDate.getDate(); //获取当前日
+			var h = myDate.getHours(); //获取当前小时数(0-23)
+			var m = myDate.getMinutes(); //获取当前分钟数(0-59)
+			var s = myDate.getSeconds();
+			var now = getNow(h) + ':' + getNow(m) + ":" + getNow(s);
+			$('#time').html(now)
+		}, 1000)
+		$('.null').click(function(){
+			if($(this).hasClass('on')){
+				$('input').removeAttr("disabled");
+				$(this).removeClass('on')
+			}else{
+				$('input').attr('disabled','disabled')
+				$(this).addClass('on')
+			}
+		})
+	</script>
+
+</html>

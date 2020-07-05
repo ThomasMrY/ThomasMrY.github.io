@@ -1,0 +1,103 @@
+.contents {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 0 .36rem; }
+  .contents ul {
+    overflow: hidden;
+    width: 100%;
+    padding: .35rem 0;
+    border-bottom: .02rem solid #737373; }
+    .contents ul li {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      margin-bottom: .55rem; }
+      .contents ul li:last-child {
+        margin-bottom: 0; }
+      .contents ul li p {
+        font-size: .26rem;
+        color: #131313;
+        width: 2.12rem;
+        padding-left: .3rem;
+        box-sizing: border-box;
+        font-weight: bold; }
+      .contents ul li span {
+        display: block;
+        font-size: .26rem;
+        color: #4e4e4e; }
+      .contents ul li input {
+        width: 4.3rem;
+        height: 100%;
+        padding: 0;
+        border: none;
+        outline: none;
+        font-size: .28rem;
+        background: none;
+        color: #4e4e4e; }
+        .contents ul li input::placeholder {
+          color: #4e4e4e; }
+        .contents ul li input::-moz-placeholder {
+          color: #4e4e4e; }
+        .contents ul li input:-ms-input-placeholder {
+          color: #4e4e4e; }
+
+.null {
+  width: 100%;
+  height: 1.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 2.2rem; }
+
+.btn {
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  width: 6.76rem;
+  margin-left: -3.38rem;
+  height: 1.4rem;
+  background: #763f90;
+  padding: .22rem 0;
+  border-radius: .15rem;
+  bottom: 2.2rem; }
+  .btn.on {
+    background: #4087F1; }
+  .btn p {
+    font-size: .37rem;
+    color: #fff;
+    line-height: 1;
+    text-align: center; }
+  .btn div {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .btn div input {
+      width: 2.02rem;
+      border: none;
+      outline: none;
+      background: none;
+      font-size: .37rem;
+      padding: .1rem 0;
+      box-sizing: border-box;
+      color: #fff; }
+      .btn div input::placeholder {
+        color: #fff; }
+      .btn div input::-moz-placeholder {
+        color: #fff; }
+      .btn div input:-ms-input-placeholder {
+        color: #fff; }
+    .btn div span {
+      font-size: .37rem;
+      color: #fff; }
+
+input[disabled] {
+  color: #4e4e4e !important;
+  opacity: 1 !important; }
+
+input:disabled {
+  color: #4e4e4e !important;
+  opacity: 1 !important; }
+
+/*# sourceMappingURL=css.css.map */
