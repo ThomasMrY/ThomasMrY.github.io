@@ -43,8 +43,8 @@
 					<input type="text" placeholder="请输入时间" name="" id="" value="" />
 				</li>
 			</ul>
-			<div class="btn on">
-				<p>可出校</p>
+			<div class="btn on" onclick="changeColor(this)" style="background: #4087F1;">
+				<p class="my_text">可出校</p>
 				<div>
 					<input type="text" id="select_0" placeholder="2020-06-11" name="" id="" value="" />
 					<span id="time">20:55:45</span>
@@ -83,6 +83,17 @@
 				$(this).addClass('on')
 			}
 		})
+		function changeColor(oTarget)
+		{
+			if(document.getElementsByClassName('my_text')[0].innerHTML=='可出校'){
+				oTarget.style.background = '#763f90';
+				document.getElementsByClassName('my_text')[0].innerHTML = "可入校"
+			}
+			else{
+				oTarget.style.background = '#4087F1';
+				document.getElementsByClassName('my_text')[0].innerHTML = "可出校"
+			}	
+		}
 	</script>
 
 </html>

@@ -57,12 +57,9 @@
   width: 6.76rem;
   margin-left: -3.38rem;
   height: 1.4rem;
-  background: #763f90;
   padding: .22rem 0;
   border-radius: .15rem;
   bottom: 2.2rem; }
-  .btn.on {
-    background: #4087F1; }
   .btn p {
     font-size: .37rem;
     color: #fff;

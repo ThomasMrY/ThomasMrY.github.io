@@ -9,5 +9,6 @@
        _self.changePage(); 
        window.addEventListener('resize',function(){_self.changePage();},false);
     };
-    
+
+
 
